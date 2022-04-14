@@ -1,0 +1,33 @@
+<div class="text-center text-light">
+
+    <h1 class="text-danger m-auto p-4">Image Not Found!</h1>
+
+    <h3 class="m-auto p-3 text-white-50">Please enter a valid image name and format!</h3>
+
+    <div class="m-auto mt-4 p-3 w-50 border border-info rounded" style="border-style: dashed !important;">
+        <p> 
+            Required image name was <strong>{{imgName}}</strong><br>
+            correct name should be <strong>example00-00-00.jpg</strong>
+        </p>
+    </div>
+
+    <div>
+        <table class="m-auto mt-4 table w-50 text-center text-info">
+
+            <thead>
+                <tr>
+                    <th scope="col">Available Images in assets/thumb</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each ProcessedPictures}}
+                <tr>
+                    <td>{{this}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+            
+        </table>
+    </div>
+</div>

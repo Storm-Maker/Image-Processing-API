@@ -1,0 +1,35 @@
+<div class="text-center text-light">
+    
+    <h1 class="text-danger m-auto p-4">Image Creation Failed!</h1>
+
+    <h2 class="m-auto p-3 text-warning">Unknown Error has occurred!</h3>
+
+    <div class="m-auto mt-4 p-3 w-50 border border-danger rounded" style="border-style: dashed !important;">
+        <p>Parameters expected to match<strong><br>/api/images?filename=example.jpg&width=200&height=200</strong><br><br>
+        with positive values for width & height but got
+        <br><strong>{{param}}</strong><br><br>
+        For a full list of the available images in assets/full, check the list below
+        </p>
+    </div>
+
+    <div>
+        <table class="m-auto mt-4 table w-50 text-center text-info">
+
+            <thead>
+                <tr>
+                    <th scope="col">Available Images in assets/full</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each AvailPics}}
+                <tr>
+                    <td>{{this}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+
+        </table>
+    </div>
+
+</div>

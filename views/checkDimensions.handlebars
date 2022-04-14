@@ -1,0 +1,16 @@
+<div class="text-center text-light">
+    
+    <h1 class="text-danger m-auto p-4">Image Creation Failed!</h1>
+
+    <h2 class="text-warning m-auto p-4">Width & Height must be valid and positive numbers!</h2>
+
+    <h3 class="m-auto p-3 text-white-50">Please check the values for width & height and make sure to choose a jpg picture with correct filename then try again!</h3>
+
+    <div class="m-auto mt-4 p-3 w-50 border border-danger rounded" style="border-style: dashed !important;">
+        <p>Parameters expected to match<strong><br>/api/images?filename=example.jpg&width=200&height=200</strong><br><br>
+        with positive values for width & height but got
+        <br><strong>{{param}}</strong><br><br>
+        </p>
+    </div>
+
+</div>
